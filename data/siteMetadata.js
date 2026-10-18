@@ -10,7 +10,7 @@ const siteMetadata = {
   siteUrl: 'https://xinran-hu.vercel.app',
   siteRepo: 'https://github.com/XinranHu26/xinran-sarah-hu',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/avatar.jpg`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/og-banner.jpg`,
   email: 'hu874@purdue.edu',
   altEmail: 'xinran.sarah.hu@gmail.com',
   github: 'https://github.com/XinranHu26',
