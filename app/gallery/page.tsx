@@ -41,7 +41,9 @@ export default function Page() {
                         width={photo.width}
                         height={photo.height}
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="h-full w-full object-cover"
+                        className={`h-full w-full ${
+                          photo.fit === 'contain' ? 'object-contain' : 'object-cover'
+                        }`}
                         style={{ objectPosition: photo.objectPosition ?? 'center' }}
                       />
                     </div>

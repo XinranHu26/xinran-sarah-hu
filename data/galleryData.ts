@@ -12,6 +12,8 @@ export interface Photo {
   date?: string
   /** CSS object-position for the square crop; defaults to center */
   objectPosition?: string
+  /** 'contain' shows the whole frame inside the square instead of cropping it */
+  fit?: 'cover' | 'contain'
 }
 
 export interface PhotoSection {
@@ -127,13 +129,13 @@ const gallery: PhotoSection[] = [
         date: 'July 2023',
       },
       {
-        src: '/static/images/gallery/indot-demo-truck-2023.jpg',
+        src: '/static/images/gallery/jtrp-2023.jpg',
         width: 1600,
-        height: 1067,
-        caption: 'Looking over maintenance equipment with INDOT staff.',
-        event: 'INDOT Demonstration, Indiana',
-        date: 'July 2023',
-        objectPosition: '45% center',
+        height: 1200,
+        caption: 'With the lab at the JTRP poster session.',
+        event: 'JTRP Poster Session, Indianapolis, IN',
+        date: 'February 2023',
+        fit: 'contain',
       },
     ],
   },
