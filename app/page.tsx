@@ -162,9 +162,9 @@ export default function Page() {
           />
           <VideoEmbed
             id="3Iflw6qpd9s"
-            title="Teaching demo"
+            title="Teaching CM 301"
             poster="/static/images/video/teaching-demo-poster.jpg"
-            caption="Teaching demonstration."
+            caption="Teaching CM 301, Introduction to Construction Company Financial Management."
           />
         </div>
       </div>
