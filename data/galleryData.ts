@@ -164,10 +164,10 @@ const gallery: PhotoSection[] = [
         caption: 'Recording a crew at work along the roadway.',
       },
       {
-        src: '/static/images/gallery/fieldwork-paving-operation.jpg',
-        width: 1600,
-        height: 2133,
-        caption: 'During an active pavement maintenance operation.',
+        src: '/static/images/gallery/fieldwork-roadway-clearing.jpg',
+        width: 1024,
+        height: 768,
+        caption: 'Clearing the roadway with backpack blowers during a maintenance operation.',
       },
       // {
       // src: '/static/images/gallery/fieldwork-sensor-station.jpg',
