@@ -127,6 +127,7 @@ const gallery: PhotoSection[] = [
         caption: 'With the team at an INDOT equipment demonstration.',
         event: 'INDOT Demonstration, Indiana',
         date: 'July 2023',
+        fit: 'contain',
       },
       {
         src: '/static/images/gallery/jtrp-2023.jpg',
