@@ -58,7 +58,7 @@ const gallery: PhotoSection[] = [
         height: 1440,
         caption: 'Left to right: Xingzhou Guo, Hongyue Wu, and me.',
         event: 'AHFE International Conference, Honolulu, HI',
-        date: '2024',
+        date: 'December 2024',
       },
       {
         src: '/static/images/gallery/jtrp-poster-session.jpg',

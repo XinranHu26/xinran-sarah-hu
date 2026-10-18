@@ -9,6 +9,33 @@ import { researchThemes } from '@/data/researchData'
 import publications from '@/data/publicationsData'
 import education from '@/data/educationData'
 
+const highlights = [
+  {
+    label: 'Research',
+    href: '/research',
+    src: '/static/images/gallery/fieldwork-roadside-crew.jpg',
+    width: 1600,
+    height: 1200,
+    alt: 'Recording a highway maintenance crew at work along the roadway.',
+  },
+  {
+    label: 'Teaching',
+    href: '/teaching',
+    src: '/static/images/gallery/lecture-engaging.jpg',
+    width: 1600,
+    height: 1200,
+    alt: 'Working through a problem with the CM 301 class.',
+  },
+  {
+    label: 'Conferences',
+    href: '/gallery',
+    src: '/static/images/gallery/trb-2025-podium.jpg',
+    width: 1600,
+    height: 1926,
+    alt: 'Presenting at the TRB Annual Meeting in Washington, DC.',
+  },
+]
+
 export default function Page() {
   const author = allAuthors.find((p) => p.slug === 'default') as Authors
   const mainContent = coreContent(author)
@@ -85,6 +112,30 @@ export default function Page() {
               Research
             </Link>
           </div>
+        </div>
+      </div>
+
+      {/* Representative work — research, teaching, conferences */}
+      <div className="py-8">
+        <div className="grid grid-cols-3 gap-4 sm:gap-5">
+          {highlights.map((item) => (
+            <Link key={item.href} href={item.href} className="group">
+              <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                  sizes="(min-width: 768px) 33vw, 33vw"
+                  className="h-full w-full object-cover transition group-hover:scale-[1.03]"
+                  style={{ objectPosition: item.objectPosition ?? 'center' }}
+                />
+              </div>
+              <p className="group-hover:text-primary-500 dark:group-hover:text-primary-400 mt-2 text-center text-sm font-medium text-gray-700 dark:text-gray-300">
+                {item.label}
+              </p>
+            </Link>
+          ))}
         </div>
       </div>
 
