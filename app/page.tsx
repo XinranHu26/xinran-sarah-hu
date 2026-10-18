@@ -8,6 +8,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { researchThemes } from '@/data/researchData'
 import publications from '@/data/publicationsData'
 import education from '@/data/educationData'
+import VideoEmbed from '@/components/VideoEmbed'
 
 const highlights = [
   {
@@ -136,6 +137,27 @@ export default function Page() {
               </p>
             </Link>
           ))}
+        </div>
+      </div>
+
+      {/* Videos */}
+      <div className="py-10">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+          Video
+        </h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <VideoEmbed
+            id="SDWN-5HMlqA"
+            title="Field data collection"
+            poster="/static/images/video/field-data-collection-poster.jpg"
+            caption="Field data collection with INDOT highway maintenance crews."
+          />
+          <VideoEmbed
+            id="3Iflw6qpd9s"
+            title="Teaching demo"
+            poster="/static/images/video/teaching-demo-poster.jpg"
+            caption="Teaching demonstration."
+          />
         </div>
       </div>
 
