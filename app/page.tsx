@@ -129,7 +129,7 @@ export default function Page() {
       {/* Representative work — research, teaching, conferences */}
       <div className="py-8">
         <div className="grid grid-cols-3 gap-4 sm:gap-5">
-          {highlights.map((item) => (
+          {highlights.map((item, i) => (
             <Link key={item.href} href={item.href} className="group">
               <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
                 <Image
@@ -138,6 +138,7 @@ export default function Page() {
                   width={item.width}
                   height={item.height}
                   sizes="(min-width: 768px) 33vw, 33vw"
+                  priority={i === 0}
                   className="h-full w-full object-cover transition group-hover:scale-[1.03]"
                   style={{ objectPosition: item.objectPosition ?? 'center' }}
                 />
@@ -151,11 +152,8 @@ export default function Page() {
       </div>
 
       {/* Videos */}
-      <div className="py-10">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-          Video
-        </h2>
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
+      <div className="pb-10">
+        <div className="grid gap-6 md:grid-cols-2">
           <VideoEmbed
             id="SDWN-5HMlqA"
             title="Field data collection"
