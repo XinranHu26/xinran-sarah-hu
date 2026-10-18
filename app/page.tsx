@@ -10,7 +10,17 @@ import publications from '@/data/publicationsData'
 import education from '@/data/educationData'
 import VideoEmbed from '@/components/VideoEmbed'
 
-const highlights = [
+interface Highlight {
+  label: string
+  href: string
+  src: string
+  width: number
+  height: number
+  alt: string
+  objectPosition?: string
+}
+
+const highlights: Highlight[] = [
   {
     label: 'Research',
     href: '/research',
