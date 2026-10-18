@@ -35,6 +35,78 @@ export interface PhotoSection {
  */
 const gallery: PhotoSection[] = [
   {
+    heading: 'Field Work',
+    blurb: 'Data collection with INDOT highway maintenance crews (SPR-4838).',
+    showCaptions: false,
+    // Three more field photos are commented out below: two duplicated the
+    // shots kept here, and the crew briefing showed workers' faces clearly,
+    // which goes further than a study consent form usually covers.
+    photos: [
+      {
+        src: '/static/images/gallery/fieldwork-indot-trucks.jpg',
+        width: 1600,
+        height: 1620,
+        caption: 'On site with the INDOT maintenance fleet.',
+      },
+      // {
+      // src: '/static/images/gallery/fieldwork-camera-setup.jpg',
+      // width: 1178,
+      // height: 1466,
+      // caption: 'Setting up cameras for markerless pose estimation.',
+      // },
+      {
+        src: '/static/images/gallery/fieldwork-roadside-crew.jpg',
+        width: 1600,
+        height: 1200,
+        caption: 'Recording a crew at work along the roadway.',
+      },
+      {
+        src: '/static/images/gallery/fieldwork-roadway-clearing.jpg',
+        width: 1024,
+        height: 768,
+        caption: 'Clearing the roadway with backpack blowers during a maintenance operation.',
+      },
+      // {
+      // src: '/static/images/gallery/fieldwork-sensor-station.jpg',
+      // width: 1600,
+      // height: 2133,
+      // caption: 'The roadside station logging physiological and motion data.',
+      // },
+      // {
+      // src: '/static/images/gallery/fieldwork-crew-briefing.jpg',
+      // width: 1600,
+      // height: 1200,
+      // caption: 'Briefing the crew before a session.',
+      // },
+    ],
+  },
+  {
+    heading: 'Teaching',
+    blurb: 'CM 301, Purdue University.',
+    showCaptions: false,
+    photos: [
+      {
+        src: '/static/images/gallery/lecture-hall-wide.jpg',
+        width: 1600,
+        height: 1067,
+        caption: 'Lecturing on statement analysis.',
+      },
+      {
+        src: '/static/images/gallery/lecture-podium.jpg',
+        width: 1600,
+        height: 2400,
+        caption: 'Teaching line-item, horizontal, and vertical analysis.',
+        objectPosition: 'center 62%',
+      },
+      {
+        src: '/static/images/gallery/lecture-engaging.jpg',
+        width: 1600,
+        height: 1200,
+        caption: 'Working through a problem with the class.',
+      },
+    ],
+  },
+  {
     heading: 'Conferences & Presentations',
     // Lead row first, then newest to oldest.
     photos: [
@@ -138,78 +210,6 @@ const gallery: PhotoSection[] = [
         date: 'February 2023',
         fit: 'contain',
       },
-    ],
-  },
-  {
-    heading: 'Teaching',
-    blurb: 'CM 301, Purdue University.',
-    showCaptions: false,
-    photos: [
-      {
-        src: '/static/images/gallery/lecture-hall-wide.jpg',
-        width: 1600,
-        height: 1067,
-        caption: 'Lecturing on statement analysis.',
-      },
-      {
-        src: '/static/images/gallery/lecture-podium.jpg',
-        width: 1600,
-        height: 2400,
-        caption: 'Teaching line-item, horizontal, and vertical analysis.',
-        objectPosition: 'center 62%',
-      },
-      {
-        src: '/static/images/gallery/lecture-engaging.jpg',
-        width: 1600,
-        height: 1200,
-        caption: 'Working through a problem with the class.',
-      },
-    ],
-  },
-  {
-    heading: 'Field Work',
-    blurb: 'Data collection with INDOT highway maintenance crews (SPR-4838).',
-    showCaptions: false,
-    // Three more field photos are commented out below: two duplicated the
-    // shots kept here, and the crew briefing showed workers' faces clearly,
-    // which goes further than a study consent form usually covers.
-    photos: [
-      {
-        src: '/static/images/gallery/fieldwork-indot-trucks.jpg',
-        width: 1600,
-        height: 1620,
-        caption: 'On site with the INDOT maintenance fleet.',
-      },
-      // {
-      // src: '/static/images/gallery/fieldwork-camera-setup.jpg',
-      // width: 1178,
-      // height: 1466,
-      // caption: 'Setting up cameras for markerless pose estimation.',
-      // },
-      {
-        src: '/static/images/gallery/fieldwork-roadside-crew.jpg',
-        width: 1600,
-        height: 1200,
-        caption: 'Recording a crew at work along the roadway.',
-      },
-      {
-        src: '/static/images/gallery/fieldwork-roadway-clearing.jpg',
-        width: 1024,
-        height: 768,
-        caption: 'Clearing the roadway with backpack blowers during a maintenance operation.',
-      },
-      // {
-      // src: '/static/images/gallery/fieldwork-sensor-station.jpg',
-      // width: 1600,
-      // height: 2133,
-      // caption: 'The roadside station logging physiological and motion data.',
-      // },
-      // {
-      // src: '/static/images/gallery/fieldwork-crew-briefing.jpg',
-      // width: 1600,
-      // height: 1200,
-      // caption: 'Briefing the crew before a session.',
-      // },
     ],
   },
   {
